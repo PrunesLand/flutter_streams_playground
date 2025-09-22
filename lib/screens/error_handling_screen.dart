@@ -11,7 +11,8 @@ class ErrorHandlingScreen extends StatefulWidget {
 
 class _ErrorHandlingScreenState extends State<ErrorHandlingScreen> {
   // A StreamController to manage the stream.
-  final StreamController<String> _streamController = StreamController<String>();
+  final StreamController<String> _streamController =
+      StreamController<String>.broadcast();
   StreamSubscription? _subscription;
 
   @override
